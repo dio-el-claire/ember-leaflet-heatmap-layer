@@ -1,6 +1,6 @@
 # ember-leaflet-heatmap-layer
 
-This README outlines the details of collaborating on this Ember addon.
+Brings [Heatmap.js](https://www.patrick-wied.at/static/heatmapjs/) functionality into [Ember-Leaflet](http://ember-leaflet.com).
 
 ## Installation
 
