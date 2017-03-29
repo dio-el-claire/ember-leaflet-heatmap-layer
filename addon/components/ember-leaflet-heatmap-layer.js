@@ -34,13 +34,11 @@ export default BaseLayer.extend({
   },
 
   didCreateLayer() {
-  	console.log('didCreateLayer', this._layer)
-
     A([this.get('latField'), this.get('lngField'), this.get('valueField')]).forEach((field) => {
       this.addObserver(`data.@each.${field}`, this.updateData);
     });
 
-  	this.updateData();
+    this.updateData();
   },
 
   updateData() {
