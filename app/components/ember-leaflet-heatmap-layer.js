@@ -1,0 +1,1 @@
+export { default } from 'ember-leaflet-heatmap-layer/components/ember-leaflet-heatmap-layer';
