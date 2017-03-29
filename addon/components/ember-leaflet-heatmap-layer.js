@@ -30,7 +30,7 @@ export default BaseLayer.extend({
   maxValue: 1,
 
 	createLayer() {
-    return new HeatmapOverlay(...this.get('requiredOptions'), this.get('options'));
+    return new HeatmapOverlay(this.get('options'));
   },
 
   didCreateLayer() {
