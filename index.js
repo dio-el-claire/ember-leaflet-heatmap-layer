@@ -2,9 +2,7 @@
 'use strict';
 const resolve = require('resolve');
 const path = require('path');
-const mergeTrees = require('broccoli-merge-trees');
 const Funnel = require('broccoli-funnel');
-const VersionChecker = require('ember-cli-version-checker');
 const filterInitializers = require('fastboot-filter-initializers');
 
 module.exports = {
