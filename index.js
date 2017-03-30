@@ -3,6 +3,7 @@
 const resolve = require('resolve');
 const path = require('path');
 const Funnel = require('broccoli-funnel');
+const mergeTrees = require('broccoli-merge-trees');
 const filterInitializers = require('fastboot-filter-initializers');
 
 module.exports = {
@@ -14,7 +15,11 @@ module.exports = {
 
   treeForVendor: function() {
     let dist = this.pathBase('heatmap.js');
-    return new Funnel(dist, { destDir: 'heatmap.js' });
+    console.log("dist", dist);
+    return mergeTrees([
+      new Funnel(dist, { destDir: 'heatmap.js' }),
+      new Funnel("/vendor/shims", { destDir: 'shims' })
+    ]);
   },
 
   included(app) {
@@ -39,7 +44,7 @@ module.exports = {
     } while (current.parent.parent && (current = current.parent));
 
     // import javascript only if not in fastboot
-    if (!options.excludeJS && !process.env.EMBER_CLI_FASTBOOT) {
+    if (!process.env.EMBER_CLI_FASTBOOT) {
       app.import('vendor/shims/leaflet.js');
       app.import('vendor/heatmap.js/build/heatmap.js', { using: [{ transformation: 'amd', as: 'heatmap.js' }] });
       app.import('vendor/heatmap.js/plugins/leaflet-heatmap/leaflet-heatmap.js', { using: [{ transformation: 'amd', as: 'HeatmapOverlay' }] });
