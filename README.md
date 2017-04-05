@@ -14,7 +14,7 @@ ember install ember-leaflet-heatmap-layer
 
   {{tile-layer url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"}}
 
-  {{google-mutant-heatmap-layer data=data valueField='...' maxValue=... minValue=... }}
+  {{heatmap-layer data=data valueField='...' maxValue=... minValue=... }}
 
 {{/leaflet-map}}
 ```
@@ -27,7 +27,7 @@ ember install ember-leaflet-heatmap-layer
 * `latField` latitude field name, default `lat`
 * `lngField` longitude field name, default `lng`
 * `valueField` value field name, default `value`
-* `blur` The blur factor that will be applied to all datapoints. The higher the blur factor is, the smoother the gradients will be, default 0.85
+* `blur` The blur factor that will be applied to all datapoints. The higher the blur factor is, the smoother the gradients will be, default `0.85`
 * `minOpacity` The minimum opacity the lowest value in the heatmap will have (will be overridden if opacity set), default `0`
 * `maxOpacity` The maximum opacity the lowest value in the heatmap will have (will be overridden if opacity set), default `0.8`
 * `opacity` (optional) A global opacity for the whole heatmap. This overrides maxOpacity and minOpacity if set!
