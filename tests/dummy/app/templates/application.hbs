@@ -7,7 +7,7 @@
 <div style="width:100%; height:500px; position:relative">
 	{{#leaflet-map lat=25.6586 lng=-80.3568 zoom=4 height="500px"}}
 	  {{tile-layer url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"}}
-	  {{ember-leaflet-heatmap-layer data=data valueField='count' maxValue=max}}
+	  {{heatmap-layer data=data valueField='count' maxValue=max}}
 	{{/leaflet-map}}
 </div>
 

@@ -7,11 +7,11 @@ const { A, run } = Ember;
 export default BaseLayer.extend({
 
   leafletOptions: [
-		'backgroundColor', 'blur', 'gradient', 'latField', 'lngField', 'maxOpacity', 'minOpacity',
+    'backgroundColor', 'blur', 'gradient', 'latField', 'lngField', 'maxOpacity', 'minOpacity',
     'radius', 'scaleRadius', 'useLocalExtrema', 'valueField', 'maxValue', 'minValue', 'blur', 'opacity', 'gradient'
-	],
+  ],
 
-	radius: 2,
+  radius: 2,
 
   maxOpacity: .8,
 
@@ -19,7 +19,7 @@ export default BaseLayer.extend({
 
   useLocalExtrema: true,
 
-	latField: 'lat',
+  latField: 'lat',
 
   lngField: 'lng',
 
@@ -29,7 +29,7 @@ export default BaseLayer.extend({
 
   maxValue: 1,
 
-	createLayer() {
+  createLayer() {
     return new HeatmapOverlay(this.get('options'));
   },
 
