@@ -18,7 +18,7 @@ module.exports = {
     console.log("dist", dist);
     return mergeTrees([
       new Funnel(dist, { destDir: 'heatmap.js' }),
-      new Funnel("/vendor/shims", { destDir: 'shims' })
+      new Funnel(__dirname + "/vendor/shims", { destDir: 'shims' })
     ]);
   },
 
