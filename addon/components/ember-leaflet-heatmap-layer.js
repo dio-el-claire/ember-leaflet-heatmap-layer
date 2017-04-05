@@ -8,7 +8,7 @@ export default BaseLayer.extend({
 
   leafletOptions: [
 		'backgroundColor', 'blur', 'gradient', 'latField', 'lngField', 'maxOpacity', 'minOpacity',
-    'radius', 'scaleRadius', 'useLocalExtrema', 'valueField', 'maxValue', 'minValue'
+    'radius', 'scaleRadius', 'useLocalExtrema', 'valueField', 'maxValue', 'minValue', 'blur', 'opacity', 'gradient'
 	],
 
 	radius: 2,
