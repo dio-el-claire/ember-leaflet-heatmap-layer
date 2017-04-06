@@ -46,7 +46,8 @@ export default BaseLayer.extend({
       this._layer.setData({
         data: this.get('data') || [],
         min: this.get('minValue'),
-        max: this.get('maxValue')});
+        max: this.get('maxValue')
+      });
     });
   }
 
