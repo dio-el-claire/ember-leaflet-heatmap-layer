@@ -1,12 +1,12 @@
 {
   "name": "ember-leaflet-heatmap-layer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Dmitry (dio) Levashov",
   "directories": {
     "doc": "doc",
     "test": "tests"
