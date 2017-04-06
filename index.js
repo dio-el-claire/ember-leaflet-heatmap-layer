@@ -15,7 +15,7 @@ module.exports = {
 
   treeForVendor: function() {
     let dist = this.pathBase('heatmap.js');
-    console.log("dist", dist);
+
     return mergeTrees([
       new Funnel(dist, { destDir: 'heatmap.js' }),
       new Funnel(__dirname + "/vendor/shims", { destDir: 'shims' })
