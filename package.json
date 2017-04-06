@@ -1,6 +1,6 @@
 {
   "name": "ember-leaflet-heatmap-layer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
@@ -11,15 +11,15 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/dio-el-claire/ember-leaflet-heatmap-layer",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^5.1.7",
     "broccoli-funnel": "^1.1.0",
+    "ember-cli-babel": "^5.1.7",
     "fastboot-filter-initializers": "0.0.2",
     "heatmap.js": "^2.0.5"
   },
